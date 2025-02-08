@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+# index.html Css
+# @author: DouJiao
+# @Date: 2022/5/28
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# 清楚默认样式
+--------------------------------------------------------------*/
+*{
+    padding: 0;/* 内边距 */
+    margin: 0;/* 外边距 */
+}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu
+{
+    margin:0;padding:0;
+}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+/*--------------------------------------------------------------
+# body标签样式
+--------------------------------------------------------------*/
+body{
+    /* 加载背景图 */
+    background-image: url(../../../src/images/index/img-bg.jpeg);
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size:  cover;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+    width: calc(100vw + 18px);
+    overflow: auto;
+}
+/*--------------------------------------------------------------
+# 导航栏样式
+--------------------------------------------------------------*/
+nav{
+    width: 100%;
+    line-height: 4em; /* 文本行基线间的垂直距离 */
+    background-color: /* bisque */beige;
+    border-radius: 0.1rem; /*圆角*/
+    /*盒子阴影*/
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.1);
+}
+.nav_z-index{
+    position: fixed;/* 固定定位 */
+    top: 0;
+    left: 0;
+    z-index: 1;/* 层叠显示 */
+}
+.nav-Box{
+    margin: 0 auto;
+    padding: 0 1.8em;
+}
+.nav-box:after{
+    content: "";
+    clear: both;/* 清除浮动 */
+    display: block; /* 显示布局 */
+}
+.nav-header h2{
+    height: 1em;
+    text-align: center;
+    float: left;
+}
+.nav-header h2 img{
+    margin-top: -0.6em;
+    width:140%;
+    inline-size: 5em
+}
+.nav-header a{
+    float: right;
+    font-size: 3em;
+    /*line-height: 2em;*/
+}
+.nav-list{
+    background-color: #222 ;
+    padding-top: 4.6em;
+    margin:  0 -2em;
+    display: none;
+}
+.nav-list ul li {
+    border-top: 0.1em solid #999;
+}
+.nav-list ul li a{
+    color: salmon;
+    padding: 0.5em 2em;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# 框架
+--------------------------------------------------------------*/
+.area{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.area .area-box{
+    overflow:hidden; /*让DIV子元素超出部分隐藏*/
+    /*overflow-y:auto;!*DIV子元素超出部分显示滚动条*!*/
+    position: relative;
+    height: 90%;
+    border: 0.6em solid skyblue;
+    margin: 6em 1em 0.5em 1em;
+    border-radius: 1em; /*圆角*/
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0,0,0,0.1);/*盒子阴影*/
+}
+.area-text{
+    text-align: center;
+    background-color: #f0ad4e;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0,0,0,0.1);
+}
+.area-tabs{
+    height: 96%;
+}
+.area-tabs h3{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: -0.5em;
+}
+.area ul li{
+    width: 25%;
+    border-radius: 0.5em;
+    padding: 0.8em 0.8em;
+}
+.area ul li a{
+    background-color: #f7ecb5;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em salmon;
+    border-radius: 0.5em;
+    text-align: center;
+    color: salmon;
+}
+.tab-content{
+    overflow:hidden; /*让DIV子元素超出部分隐藏*/
+    overflow-y:auto;/*DIV子元素超出部分显示滚动条*/
+    margin: 0.5em;
+    height: 75%;
+    color: black;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em seagreen;
+    border: 0.1em solid skyblue;
+
+}
+
+footer{
+    height: 2em;
+    width: 100%;
+    text-align: center;
+}
+.about{
+    background-color: white;
+    height: 80%;
+    border: 0.3em solid #e4b9b9;
+    margin: 1em 1em 1em 1em;
+    border-radius: 1em; /*圆角*/
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0,0,0,0.1);/*盒子阴影*/;
+    text-align: center;
+}
+.titleArea{
+    height: 80%;
+    border: 0.3em solid #e4b9b9;
+    margin: 1em 1em 1em 1em;
+    border-radius: 1em; /*圆角*/
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0,0,0,0.1);/*盒子阴影*/;
+    background-color: cornsilk;
+    text-align: center;
+}
+.title-text span {
+    display: block;      /*设置为块级元素会独占一行形成上下居中的效果*/
+    position: relative;  /*定位横线（当横线的父元素）*/
+    color: black;      /*居中文字的颜色*/
+    text-align: center;
+}
+.table thead tr th{
+    text-align: center;
+}
+.table  {
+    background-color: antiquewhite;
+}
+.title-text span:before, .title-text span:after {
+    content: '';
+    position: absolute;   /*定位背景横线的位置*/
+    top: 50%;
+    background: #8c8c8c;   /*背景横线颜色*/
+    width: 35%;            /*单侧横线的长度*/
+    height: 1px;
+}
+.title-text span:before {
+    left: 2%;              /*调整背景横线的左右距离*/
+ }
+.title-text span:after {
+    right: 2%;
+}
+
+
+

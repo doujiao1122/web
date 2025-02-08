@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang=" zh-CN">
+
+    <head>
+      <!--使用字符集 UTF-8-->
+      <meta charset="UTF-8">
+      <!--IE-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- 移动端适配 -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <!-- 网页标题 -->
+      <title> DOUJIAO </title>
+
+      <!-- Css样式文件 -->
+      <link rel="stylesheet" href="res/css/index/index.css">
+      <link rel="stylesheet" href="res/css/Frame/font-awesome.css">
+      <link rel="stylesheet" href="res/css/Frame/bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <!-- 导航栏 -->
+        <nav class="nav_z-index">
+            <!--外div-->
+            <div class="nav-Box">
+                <!-- 移动端适配展开按键 -->
+                <div class="nav-header">
+                    <h2> <img src="src/images/index/img-logo.svg" style="" alt="@豆角酱油" /></h2>
+                    <a href="javascript:void(0)" onclick="div_on()">
+                        <i class="fa fa-bars  toggle-btn"></i>
+                    </a>
+                </div>
+                <!-- 移动端适配展开按键End -->
+                <!-- 标题栏 -->
+                <div class="nav-list">
+                    <ul  >
+                        <li role="presentation">
+                            <a href="index.html"><i class="fa fa-user-circle  toggle-btn" aria-hidden="true"> &nbsp;登录/注册</i></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><i class="fa fa-book" aria-hidden="true"></i> &nbsp;Notes</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><i class="fa fa-cloud-download" aria-hidden="true"> &nbsp;Download</i></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><i class="fa fa-th-list" aria-hidden="true"> &nbsp;Other</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 标题栏 END-->
+            </div>
+            <!--外div END-->
+        </nav>
+        <!-- 导航栏 End -->
+
+        <!-- ---------------------------------------------------------------------------------------- -->
+
+        <!-- 框架 -->
+        <div class="area">
+            <!-- 布局 -->
+            <div class="area-box">
+                <!-- 内布局 -->
+                <div class="area-tabs" >
+                    <!-- 面板 -->
+                    <div class="panel panel-default">
+                        <!-- 公告 -->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                公 告
+                            </h3>
+                        </div>
+                        <!-- 公告 End -->
+                        <!-- 公告内容 -->
+                        <div class="panel-body" >
+                            <div class="row">
+                                <p class="area-text">免责声明：本站不作商业用途，站中图片、音乐、下载资源均来源于其他网络平台，如有版权问题请联系作者删除！<br>
+                                    <i class="fa fa-envelope-open" aria-hidden="true"></i> 邮箱 : <a href="mailto:2569767455@qq.com">2569767455@qq.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 公告内容 End -->
+                    </div>
+                    <!-- 面板 End -->
+
+                    <!-- 列表 -->
+                    <ul class="nav nav-tabs  " role="tablist"   >
+                        <li role="presentation" ><a href="#page" aria-controls="page" role="tab" data-toggle="tab" >文 章</a></li>
+                        <li role="presentation" ><a href="#study" aria-controls="study" role="tab" data-toggle="tab" >学 习</a></li>
+                        <li role="presentation" ><a href="#file" aria-controls="" role="tab" data-toggle="tab" >资 源 </a></li>
+                        <li role="presentation" ><a href="#about" aria-controls="about" role="tab" data-toggle="tab" >关 于</a></li>
+                    </ul>
+                    <!-- 列表 End -->
+
+                    <!-- 列表内容 -->
+                    <div class="tab-content "  >
+                        <!-- tab-pane 1-->
+                        <div role="tabpanel" class="tab-pane active " id="page">
+
+                        </div>
+                        <!-- tab-pane 1 End -->
+
+                        <!-- tab-pane 2-->
+                        <div role="tabpanel" class="tab-pane" id="study"></div>
+                        <!-- tab-pane 2 End -->
+
+                        <!-- tab-pane 3 -->
+                        <div role="tabpanel" class="tab-pane" id="file">
+                            <div class="titleArea"  >
+                                <div class="title "><br>
+                                    <p class="title-text"><span>软件资源</span></p>
+                                    <table class="table" >
+                                        <thead >
+                                            <tr>
+                                                <th>名称</th>
+                                                <th>Url</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td >龋齿一号</td>
+                                                <td><a href="http://www.gfxcamp.com" class=" btn btn-primary">www.gfxcamp.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td >腾讯软件中心</td>
+                                                <td><a href="https://pc.qq.com/category/c99.html" class=" btn btn-primary">pc.qq.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>大眼仔</td>
+                                                <td><a href="http://www.dayanzai.me/" class=" btn btn-primary">www.dayanzai.me</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>书籍资源</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                            <tr>
+                                                <td>鸠摩搜索文档</td>
+                                                <td><a href="https://www.jiumodiary.com/" class=" btn btn-primary">www.jiumodiary.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>OpenStax CNX</td>
+                                                <td><a class=" btn btn-primary" href="https://cnx.org/">cnx.org</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>LoreFree</td>
+                                                <td><a class=" btn btn-primary" href="https://ebook2.lorefree.com/">ebook2.lorefree.com</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>教程资源</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                            <tr>
+                                                <td>ABOUTACG建模</td>
+                                                <td><a class=" btn btn-primary" href="https://www.aboutcg.org/">www.aboutcg.org</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>w3school </td>
+                                                <td><a class=" btn btn-primary" href="https://www.w3school.com.cn/">www.w3school.com.cn</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>菜鸟教程</td>
+                                                <td><a class=" btn btn-primary" href="https://www.runoob.com/">www.runoob.com</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>格式转换</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                            <tr>
+                                                <td>easypdf</td>
+                                                <td><a class=" btn btn-primary" href="https://easypdf.com/cn">easypdf.com/cn</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>docsmall </td>
+                                                <td><a class=" btn btn-primary" href="https://docsmall.com/">docsmall.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>编辑图片</td>
+                                                <td><a class=" btn btn-primary" href="https://www.iloveimg.com/zh-cn">www.iloveimg.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>图片去底工具</td>
+                                                <td><a class=" btn btn-primary" href="https://www.aigei.com/bgremover/">www.aigei.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>透明ICO图标</td>
+                                                <td><a class=" btn btn-primary" href="http://www.ico51.cn/">www.ico51.cn</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ico转png</td>
+                                                <td><a class=" btn btn-primary" href="https://www.aconvert.com/cn/image/ico-to-png/">www.aconvert.com</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>ICO</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                        <tr>
+                                            <td>icomoon</td>
+                                            <td><a class=" btn btn-primary" href="https://icomoon.io/#home">icomoon.io</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>iconfont</td>
+                                            <td><a class=" btn btn-primary" href="https://www.iconfont.cn/">www.iconfont.cn</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>图标制作IC</td>
+                                            <td><a class=" btn btn-primary"  href="https://www.bitbug.net/">www.bitbug.net</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>HTML</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                            <tr>
+                                                <td>_HTML_</td>
+                                                <td><a class=" btn btn-primary" href="https://html5up.net/">html5up.net</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="title-text"><span>色彩取色</span></p>
+                                    <table class="table" >
+                                        <tbody>
+                                            <tr>
+                                                <td>gradients</td>
+                                                <td><a class=" btn btn-primary" href="https://webgradients.com/">webgradients.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>pigment</td>
+                                                <td><a class=" btn btn-primary" href="https://pigment.shapefactory.co/">pigment.shapefactory.co</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>colorable</td>
+                                                <td><a class=" btn btn-primary" href="https://colorable.jxnblk.com/">colorable.jxnblk.com</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ColorSpace</td>
+                                                <td><a class=" btn btn-primary" href="https://mycolor.space/ ">mycolor.space </a></td>
+                                            </tr>
+                                            </tbody>
+                                            <tr>
+                                                <td>Adobe Color</td>
+                                                <td><a class=" btn btn-primary" href="https://color.adobe.com/zh/create/color-wheel/  ">color.adobe.com </a></td>
+                                            </tr>
+                                        <tr >
+                                            <td>_取色汇总合集_</td>
+                                            <td><a class=" btn btn-primary" href="https://www.digitaling.com/articles/205008.html  ">www.digitaling.com </a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab-pane 3 End -->
+
+                        <!-- tab-pane 4 -->
+                        <div role="tabpanel" class="tab-pane" id="about">
+                            <div class="about" style="background-color:azure">
+                                <table class="table" >
+                                    <caption ><i class="fa fa-area-chart" aria-hidden="true"></i> 网站资讯</caption>
+                                    <thead>
+                                    <tr >
+                                        <th >作者</th>
+                                        <th >豆角酱油</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-qq" aria-hidden="true"></i> QQ :</td>
+                                        <td>2569767455</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <i class="fa fa-envelope-open" aria-hidden="true"></i> 邮箱 :</td>
+                                        <td> <a href="mailto:2569767455@qq.com">2569767455@qq.com</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>运行时间 :</td>
+                                        <td>
+                                            <!--显示网站运行时间 -->
+                                            <small class="text-small " >
+
+                                                <a >
+                                                    <span id="timeDate">载入天数...</span>
+                                                    <span id="times">载入时分秒...</span>
+                                                </a>
+                                            </small>
+                                            <!-- 显示网站运行时间 End -->
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td >文章数目 :</td>
+                                        <td > 0 篇</td>
+                                    </tr>
+                                    <tr >
+                                        <td >本站访客 :</td>
+                                        <td > 0 个</td>
+                                    </tr>
+                                    <tr >
+                                        <td >总访问量 :</td>
+                                        <td > 0 次</td>
+                                    </tr>
+                                    <tr >
+                                        <td >更新时间 :</td>
+                                        <td > 2022年 6 月 18 日</td>
+                                    </tr>
+                                    <tr >
+                                        <td >其它地址 :</td>
+                                        <td ><a href="http://dj.yutongdst.com/">http://dj.yutongdst.com/</a></td>
+                                    </tr>
+                                    <tr >
+                                        <td >引用框架 :</td>
+                                        <td > bootstrap3、fontawesome、jquery</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- tab-pane 4 End -->
+                    </div>
+                    <!-- 列表内容 End -->
+                </div>
+                <!-- 内布局 End -->
+            </div>
+            <!-- 布局 End -->
+            <footer>
+                <div class="alert alert-danger" role="alert">
+                     Copyright  :   © 2022 豆角酱油
+                </div>
+            </footer>
+        </div>
+        <!-- 框架 End -->
+
+
+
+
+    </body>
+
+    <!-- Js -->
+    <script src="res/js/index/index.js"></script>
+    <script src="res/js/Frame/jquery.min.js"></script>
+    <script src="res/js/Frame/bootstrap.min.js"></script>
+
+</html>

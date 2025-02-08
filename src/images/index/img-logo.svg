@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="22.113" viewBox="-55.606 0 640.212 117">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 150px;
+        fill: #cc8e8e;
+        text-anchor: middle;
+      }
+
+      .cls-1 {
+        font-family: STCaiyun;
+      }
+
+      .cls-2 {
+        font-family: STHupo;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect width="529" height="117"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-path)">
+    <text id="DouJiao" class="cls-1" x="261" y="115.456"><tspan x="261">DouJiao</tspan></text>
+  </g>
+</svg>
